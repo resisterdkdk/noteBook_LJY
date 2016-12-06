@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.Dialog"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.notebook.MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"     android:layout_width="fill_parent"
+        android:layout_height="fill_parent"> <!-- 添加一个ListView控件 -->
+
+        <ListView
+            android:paddingRight="1px"
+            android:paddingBottom="5px"
+            android:background="#f0f0f0"
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <ImageButton
+        android:src="@drawable/add"
+        android:background="#f0f0f0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/button_add" />
+
+    <Button
+        android:text="Button "
+        android:background="#f0f0f0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/button_time"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="60dp"
+         />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:src="@drawable/flag"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/toggleButton"
+        android:layout_toEndOf="@+id/toggleButton"
+        android:id="@+id/imageView3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:src="@drawable/flag2"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/imageView4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:src="@drawable/month"
+        android:background="#f0f0f0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleButton"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button_add"
+        android:layout_toStartOf="@+id/button_add" />
+</RelativeLayout>
